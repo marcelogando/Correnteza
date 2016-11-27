@@ -1,0 +1,108 @@
+/**
+ * Parallax Scrolling Joomla module
+ * Author: Amr Mero
+ * Amr_elngm6@yahoo.com   
+ */
+ 
+.mod_parallax {
+	overflow:hidden;
+        margin: 0 !important;
+        padding: 0 !important;
+}
+
+.mod_parallax para {
+	background-attachment:fixed;
+	background-position:center center;
+	height: auto;
+	min-height:300px;
+	margin: 0 auto; 
+        width: 100%; 
+        max-width: 1920px; 
+        position: relative; 
+        z-index:0;
+	padding:40px !important;
+}
+.mod_parallax para p {
+	padding:40px !important;
+}
+
+.mod_parallax.rotation_up:before {
+	background:#fff;
+	z-index:1;
+	content:"";
+	height:80px;
+	overflow:hidden;
+	position:relative;
+	top:40px;
+	left:-2px;
+	display:block;
+	transform: translate(2px) rotate(2deg);
+	width: 102%;
+}
+
+.mod_parallax.rotation_down:after {
+	background:#fff;
+	z-index:1;
+	content:"";
+	height:80px;
+	overflow:hidden;
+	position:relative;
+	bottom:30px;
+	left:-2px;
+	display:block;
+	transform: translate(0px) rotate(2deg);
+	width: 102%;
+}
+
+.mod_parallax.rotation_both:after {
+	background:#fff;
+	z-index:1;
+	content:"";
+	height:80px;
+	overflow:hidden;
+	position:relative;
+	bottom:30px;
+	left:-2px;
+	display:block;
+	transform: translate(0px) rotate(2deg);
+	width: 102%;
+}
+
+.mod_parallax.rotation_both:before {
+	background:#fff;
+	z-index:1;
+        content:"";
+	height:80px;
+	overflow:hidden;
+	position:relative;
+	top: 40px;
+	left:-2px;
+	display:block;
+	transform: translate(2px) rotate(2deg);
+	width: 102%;
+}
+
+.mod_parallax.para_fullwidth {
+	overflow:auto;
+	left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.mod_parallax.rotation_both .container,
+.mod_parallax.rotation_up .container {
+	padding: 80px !important;
+}
+.mod_parallax .container {
+	margin:0 auto;
+	padding: 40px !important;
+	min-height:200px;
+}
+
+/* Introduction */
+.mod_parallax para div {position: relative; max-width:1170px; padding:40px; }
+.mod_parallax para img {max-width:100%; height:auto; margin: 0 !important; }
+
+.mod_parallax.rotation_up img,
+.mod_parallax.rotation_both img {
+         padding: 40px !important; }
